@@ -1,7 +1,6 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 using MediatR;
-using Microsoft.EntityFrameworkCore;
 
 namespace Goblin.Application.Users.Commands.UpdateUser
 {
@@ -16,8 +15,7 @@ namespace Goblin.Application.Users.Commands.UpdateUser
 
         public async Task<bool> Handle(UpdateUserCommand request, CancellationToken cancellationToken)
         {
-            var user = await _context.Users.FirstOrDefaultAsync(x => x.VkId == request.VkId,
-                                                                cancellationToken);
+            var user = await _context.Users.FindAsync(request.Id);
             if(user is null)
             {
                 return false; //TODO
