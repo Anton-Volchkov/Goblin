@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using Goblin.Application.Users.Queries.GetAllUsers;
+using Goblin.Application.Users.Queries.GetWeatherUsers;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,9 +14,9 @@ namespace Goblin.WebUI.Controllers
             _mediator = mediator;
         }
 
-        public async Task<ActionResult<UsersViewModel>> Index()
+        public async Task<ActionResult<WeatherUsersViewModel>> Index()
         {
-            return (await _mediator.Send(new GetAllUsersQuery()));
+            return (await _mediator.Send(new GetWeatherUsersQuery()));
         }
     }
 }
