@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Goblin.Application\Goblin.Application.csproj" />
+    <ProjectReference Include="..\Goblin.Common\Goblin.Common.csproj" />
+  </ItemGroup>
+
+</Project>
