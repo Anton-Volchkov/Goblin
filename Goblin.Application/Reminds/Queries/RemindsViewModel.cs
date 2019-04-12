@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Goblin.Domain.Entities;
 
-namespace Goblin.Application.Reminds.Queries.GetReminds
+namespace Goblin.Application.Reminds.Queries
 {
     public class RemindsViewModel
     {
