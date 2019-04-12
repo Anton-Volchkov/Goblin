@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using Goblin.Application.Users.Queries.GetScheduleUsers;
+using Goblin.Application.Users.Commands.CreateUser;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -14,9 +14,9 @@ namespace Goblin.WebUI.Controllers
             _mediator = mediator;
         }
 
-        public async Task<ActionResult<ScheduleUsersViewModel>> Index()
+        public async Task<ActionResult<bool>> Index(int id)
         {
-            return (await _mediator.Send(new GetScheduleUsersQuery()));
+            return await _mediator.Send(new CreateUserCommand() {VkId = id});
         }
     }
 }
