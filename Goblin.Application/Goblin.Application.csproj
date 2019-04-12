@@ -19,7 +19,6 @@
       <Folder Include="Reminds\Commands\" />
       <Folder Include="Reminds\Queries\" />
       <Folder Include="Users\Commands\UpdateUser\" />
-      <Folder Include="Users\Commands\DeleteUser\" />
     </ItemGroup>
 
 </Project>
