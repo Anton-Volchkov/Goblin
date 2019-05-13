@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Narfu.Models
+namespace Narfu.Domain
 {
     public class Lesson : IEquatable<Lesson>
     {

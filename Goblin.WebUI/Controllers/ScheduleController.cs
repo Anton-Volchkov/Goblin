@@ -3,6 +3,7 @@ using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Narfu;
+using Narfu.Schedule;
 
 namespace Goblin.WebUI.Controllers
 {

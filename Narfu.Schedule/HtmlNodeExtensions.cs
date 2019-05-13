@@ -1,9 +1,9 @@
 ﻿using System.Net;
 using HtmlAgilityPack;
 
-namespace Narfu
+namespace Narfu.Schedule
 {
-    public static class Extensions
+    public static class HtmlNodeExtensions
     {
         public static string GetNormalizedInnerText(this HtmlNode node)
         {

@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Razor.TagHelpers;
-using Narfu.Models;
+using Narfu.Domain;
 
 namespace Goblin.WebUI.TagHelpers
 {

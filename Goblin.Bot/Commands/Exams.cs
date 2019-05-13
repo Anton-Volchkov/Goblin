@@ -4,7 +4,7 @@ using Goblin.Bot.Enums;
 using Goblin.Bot.Models;
 using Goblin.Persistence;
 using Microsoft.EntityFrameworkCore;
-using Narfu;
+using Narfu.Schedule;
 using Vk.Models.Messages;
 
 namespace Goblin.Bot.Commands

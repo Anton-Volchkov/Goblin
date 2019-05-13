@@ -7,10 +7,10 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using HtmlAgilityPack;
-using Narfu.Models;
+using Narfu.Domain;
 using Newtonsoft.Json;
 
-namespace Narfu
+namespace Narfu.Schedule
 {
     public static class TeachersSchedule
     {

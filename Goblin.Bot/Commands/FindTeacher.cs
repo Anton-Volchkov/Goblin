@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Goblin.Bot.Enums;
 using Goblin.Bot.Models;
-using Narfu;
+using Narfu.Schedule;
 using Vk.Models.Messages;
 
 namespace Goblin.Bot.Commands

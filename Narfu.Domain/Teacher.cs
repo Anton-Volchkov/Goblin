@@ -1,4 +1,4 @@
-﻿namespace Narfu.Models
+﻿namespace Narfu.Domain
 {
     public class Teacher
     {

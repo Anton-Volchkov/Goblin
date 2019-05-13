@@ -6,6 +6,7 @@ using Goblin.WebUI.Extensions;
 using Hangfire;
 using Microsoft.EntityFrameworkCore;
 using Narfu;
+using Narfu.Schedule;
 using OpenWeatherMap;
 using Vk;
 

@@ -7,11 +7,11 @@ using System.Net.Http;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-using Narfu.Models;
+using Narfu.Domain;
 using Newtonsoft.Json;
 using Calendar = Ical.Net.Calendar;
 
-namespace Narfu
+namespace Narfu.Schedule
 {
     public static class StudentsSchedule
     {
@@ -33,7 +33,7 @@ namespace Narfu
             {
                 response = await Utils.Client.GetAsync(requestUrl);
             }
-            catch(TaskCanceledException ex)
+            catch(TaskCanceledException)
             {
                 return (true, HttpStatusCode.GatewayTimeout, null);
             }
