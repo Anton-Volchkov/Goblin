@@ -67,7 +67,7 @@ namespace Goblin.WebUI.Hangfire
                 foreach(var chunk in group.Chunk(ChunkLimit))
                 {
                     var ids = chunk.Select(x => x.Vk);
-                    var schedule = await StudentsSchedule.GetScheduleAtDate(DateTime.Today, group.Key);
+                    var schedule = await StudentsSchedule.GetScheduleAsString(DateTime.Today, group.Key);
                     BackgroundJob.Enqueue(() => _api.Messages.Send(ids, schedule, null, null));
                 }   
             }
@@ -101,7 +101,7 @@ namespace Goblin.WebUI.Hangfire
 
             if(StudentsSchedule.IsCorrectGroup(group))
             {
-                var schedule = await StudentsSchedule.GetScheduleAtDate(DateTime.Now, group);
+                var schedule = await StudentsSchedule.GetScheduleAsString(DateTime.Now, group);
                 await _api.Messages.Send(id, schedule);
             }
         }
