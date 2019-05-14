@@ -12,12 +12,12 @@ namespace Narfu.Parsers
     public class GroupsParser
     {
         /// <summary>
-        /// Получить список групп из высшей школы
+        ///     Получить список групп из высшей школы
         /// </summary>
         /// <returns>Массив с группами</returns>
         public static async Task<Group[]> GetGroupsFromSchool(School school)
         {
-            var client = new HttpClient()
+            var client = new HttpClient
             {
                 BaseAddress = new Uri($"{Constants.EndPoint}")
             };
@@ -27,15 +27,15 @@ namespace Narfu.Parsers
             doc.Load(await client.GetStreamAsync($"/?groups&institution={school.Id}"));
 
             var groups = doc.DocumentNode.SelectNodes("//div[contains(@class, 'tab-pane')]/div/a")
-                             .Where(x => x.Attributes["href"].Value.StartsWith("?"))
-                             .Select(x => new Group
-                             {
-                                 RealId = int.Parse(x.ChildNodes[1].InnerText),
-                                 SiteId = int.Parse(x.Attributes["href"].Value.Split('=')[1]),
-                                 Name = Regex.Replace(x.ChildNodes[2].InnerText.Trim(), @"\s+", " ")
-                             })
-                             .Distinct()
-                             .ToArray();
+                            .Where(x => x.Attributes["href"].Value.StartsWith("?") && int.TryParse(x.ChildNodes[1].InnerText, out _))
+                            .Select(x => new Group
+                            {
+                                RealId = int.Parse(x.ChildNodes[1].InnerText),
+                                SiteId = int.Parse(x.Attributes["href"].Value.Split('=')[1]),
+                                Name = Regex.Replace(x.ChildNodes[2].InnerText.Trim(), @"\s+", " ")
+                            })
+                            .Distinct()
+                            .ToArray();
 
             return groups;
         }

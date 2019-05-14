@@ -16,14 +16,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\" />
+    <Folder Include="Data2\" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Data\Groups.json">
+    <None Update="Data2\Groups.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Data\Teachers.json">
+    <None Update="Data2\Teachers.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
