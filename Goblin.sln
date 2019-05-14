@@ -29,11 +29,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vk.Tests", "Vk.Tests\Vk.Tes
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Narfu", "Narfu", "{3C33E51E-2E15-49D1-90F5-9CBA51E5FCB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Narfu.Domain", "Narfu.Domain\Narfu.Domain.csproj", "{73D22B79-0021-4A55-BB14-D9815D5F9717}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Narfu.Domain", "Narfu.Domain\Narfu.Domain.csproj", "{73D22B79-0021-4A55-BB14-D9815D5F9717}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Narfu.Schedule", "Narfu.Schedule\Narfu.Schedule.csproj", "{DD15DE63-367D-4C14-90D0-EDDEF87AF828}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Narfu.Schedule", "Narfu.Schedule\Narfu.Schedule.csproj", "{DD15DE63-367D-4C14-90D0-EDDEF87AF828}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Narfu.Parsers", "Narfu.Parsers\Narfu.Parsers.csproj", "{4AB70B38-8F27-446C-A7C3-2E0E1926FE43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Narfu.Parsers", "Narfu.Parsers\Narfu.Parsers.csproj", "{4AB70B38-8F27-446C-A7C3-2E0E1926FE43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TestApp\TestApp.csproj", "{1FE9879F-5310-4593-B6A6-539E3B1568C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -89,6 +91,10 @@ Global
 		{4AB70B38-8F27-446C-A7C3-2E0E1926FE43}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AB70B38-8F27-446C-A7C3-2E0E1926FE43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AB70B38-8F27-446C-A7C3-2E0E1926FE43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FE9879F-5310-4593-B6A6-539E3B1568C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FE9879F-5310-4593-B6A6-539E3B1568C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FE9879F-5310-4593-B6A6-539E3B1568C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FE9879F-5310-4593-B6A6-539E3B1568C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
