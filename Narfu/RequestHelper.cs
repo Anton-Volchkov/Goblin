@@ -2,6 +2,9 @@
 
 namespace Narfu
 {
+    /// <summary>
+    /// Тест
+    /// </summary>
     public class RequestHelper
     {
         public static IFlurlRequest BuildRequest()
